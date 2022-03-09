@@ -1,3 +1,9 @@
+-- https://ave.is-a.dev/galaxy-hub
+
+function ls(url)
+    return loadstring(game:HttpGet(url, true))()
+end
+
 return {
     ["PluginName"] = "Galaxy Hub",
     ["PluginDescription"] = "A cool scripthub",
@@ -15,7 +21,7 @@ return {
             ["Description"] = "Launches CMD-X",
             ["Aliases"] = {"-domain-x", "cmdx", "cx"},
             ["Function"] = function(args, speaker)
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+                ls("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source")
             end
         },
         ["domain-x"] = {
@@ -23,7 +29,7 @@ return {
             ["Description"] = "Launches Domain X",
             ["Aliases"] = {"-domain-x", "dmnx", "dx"},
             ["Function"] = function(args, speaker)
-                loadstring(game:HttpGet("https://shlex.dev/release/domainx/latest.lua", true))()
+                ls("https://shlex.dev/release/domainx/latest.lua")
             end
         }
     }
