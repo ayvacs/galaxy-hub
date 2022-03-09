@@ -1,7 +1,8 @@
 --return loadstring(game:HttpGet("https://ave.is-a.dev/galaxy-hub", true))()
 
 -- https://ave.is-a.dev/galaxy-hub
-local ver=0
+ver=0
+
 
 function ls(url)
     return loadstring(game:HttpGet(url, true))()
@@ -13,16 +14,16 @@ function desc(a, notes)
         local authors = ""
         for i, v in ipairs(a) do
             if i == #a then
-                a = a .. ", and " .. v
+                authors = authors .. ", and " .. v
             else
-                a = a .. ", " .. v
+                authors = authors .. ", " .. v
             end
         end
 
         if notes then
             return "Written by " .. authors .. ". " .. notes .. " [ Loaded with Galaxy Hub ]"
         else
-            return "Written by " .. authors .. "." .. " [ Loaded with Galaxy Hub ]"
+            return "Written by " .. authors .. ". [ Loaded with Galaxy Hub ]"
         end
     else
         if notes then
@@ -64,7 +65,7 @@ return {
         },
         ["solaris"] = {
             ["ListName"] = "Solaris Hub",
-            ["Description"] = desc({"Solaris Authors"}),
+            ["Description"] = desc({"trill"}),
             ["Aliases"] = {"sh"},
             ["Function"] = function(args, speaker)
                 ls("https://solarishub.dev/script.lua")
