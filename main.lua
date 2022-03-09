@@ -2,6 +2,14 @@ return {
     ["PluginName"] = "Galaxy Hub",
     ["PluginDescription"] = "A cool scripthub",
     ["Commands"] = {
+        ["galaxy"] = {
+            ["ListName"] = " [ Galaxy Hub Help ]",
+            ["Description"] = "Shows a help menu",
+            ["Aliases"] = {"gh", "ghub", "ghelp"},
+            ["Function"] = function(args, speaker)
+                print("Loaded the help script!!")
+            end
+        },
         ["cmd-x"] = {
             ["ListName"] = "CMD-X",
             ["Description"] = "Launches CMD-X",
