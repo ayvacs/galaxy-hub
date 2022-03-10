@@ -7,7 +7,7 @@ meta = {
     _desc = "Launch other scripts and script hubs easily, through Infinite Yield.",
     _author = "ayvacs @ GitHub",
 
-    loadsig = "[ Loaded with Galaxy Hub ]\n\n"
+    loadsig = "Loaded with Galaxy Hub\n"
 }
 
 print(meta._name)
@@ -26,6 +26,7 @@ function desc(a, notes)
             i.e. "Currently having compatibility issues with Mac injectors."
     ]]
     if a then
+        -- There are attributed authors
         local authors = ""
         
         if #a == 1 then
@@ -50,13 +51,14 @@ function desc(a, notes)
         end
 
         if notes then
-            return meta.loadsig .. "Written by " .. authors .. ". " .. notes
+            return meta.loadsig .. "Written by " .. authors .. ".\n" .. notes
         else
-            return meta.loadsig .. "Written by " .. authors .. ". "
+            return meta.loadsig .. "Written by " .. authors .. "."
         end
     else
+        -- There aren't any attributed authors
         if notes then
-            return meta.loadsig .. "Written by an unknown author." .. notes
+            return meta.loadsig .. "Written by an unknown author.\n" .. notes
         else
             return meta.loadsig .. "Written by an unknown author."
         end
@@ -71,7 +73,7 @@ return {
         -- Galaxy Maintenance Scripts
 
         ["galaxy"] = {
-            ["ListName"] = " galaxy help",
+            ["ListName"] = "galaxy help",
             ["Description"] = "Welcome to GalaxyHub!",
             ["Aliases"] = {"gh", "ghub", "ghelp"},
             ["Function"] = function(args, speaker)
@@ -92,7 +94,7 @@ return {
         },
         ["domain-x"] = {
             ["ListName"] = "domain-x",
-            ["Description"] = desc({"shlex", "Sirius Software"}),
+            ["Description"] = desc({"Sirius Software"}, "Some issues with SWM"),
             ["Aliases"] = {"domainx", "dmnx", "dx"},
             ["Function"] = function(args, speaker)
                 ls("https://shlex.dev/release/domainx/latest.lua")
