@@ -70,20 +70,6 @@ return {
     ["PluginName"] = meta._name,
     ["PluginDescription"] = meta._desc,
     ["Commands"] = {
-        -- Galaxy Maintenance Scripts
-
-        ["galaxy"] = {
-            ["ListName"] = "galaxy help",
-            ["Description"] = "Welcome to GalaxyHub!",
-            ["Aliases"] = {"gh", "ghub", "ghelp"},
-            ["Function"] = function(args, speaker)
-                print("Loaded the help script!!")
-            end
-        },
-
-
-        -- Community Scripts
-
         ["cmd-x"] = {
             ["ListName"] = "cmd-x",
             ["Description"] = desc({"xxherts", "Curvn"}),
@@ -92,9 +78,17 @@ return {
                 ls("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source")
             end
         },
+        ["dark-dex"] = {
+            ["ListName"] = "dark-dex",
+            ["Description"] = desc({}, "Made for Synapse"),
+            ["Aliases"] = {"dd", "d-dex", "ddex"},
+            ["Function"] = function(args, speaker)
+                ls("https://ayvacs.github.io/scripts/dark-dex")
+            end
+        },
         ["domain-x"] = {
             ["ListName"] = "domain-x",
-            ["Description"] = desc({"Sirius Software"}, "Some issues with SWM"),
+            ["Description"] = desc({"Sirius Software"}),
             ["Aliases"] = {"domainx", "dmnx", "dx"},
             ["Function"] = function(args, speaker)
                 ls("https://shlex.dev/release/domainx/latest.lua")
@@ -103,7 +97,7 @@ return {
         ["solaris"] = {
             ["ListName"] = "solaris",
             ["Description"] = desc({"trill"}),
-            ["Aliases"] = {"solaris-hub", "sh"},
+            ["Aliases"] = {"solaris-hub", "sh", "shub"},
             ["Function"] = function(args, speaker)
                 ls("https://solarishub.dev/script.lua")
             end
