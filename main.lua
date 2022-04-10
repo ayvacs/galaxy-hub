@@ -94,6 +94,14 @@ return {
                 ls("https://shlex.dev/release/domainx/latest.lua")
             end
         },
+        ["prison-life-gui"] = {
+            ["ListName"] = "prison-life-gui",
+            ["Description"] = desc(),
+            ["Aliases"] = {"prison-life", "pl-gui", "pl", "plg"},
+            ["Function"] = function(args, speaker)
+                ls("https://pastebin.com/raw/VPrNqGKU")
+            end
+        },
         ["solaris"] = {
             ["ListName"] = "solaris",
             ["Description"] = desc({"trill"}),
