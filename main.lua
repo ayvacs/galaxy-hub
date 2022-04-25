@@ -102,6 +102,14 @@ return {
                 ls("https://pastebin.com/raw/VPrNqGKU")
             end
         },
+        ["septex"] = {
+            ["ListName"] = "septex",
+            ["Description"] = desc({"Septex"}),
+            ["Aliases"] = {"sep", "se"},
+            ["Function"] = function(args, speaker)
+                ls("https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife")
+            end
+        },
         ["solaris"] = {
             ["ListName"] = "solaris",
             ["Description"] = desc({"trill"}),
