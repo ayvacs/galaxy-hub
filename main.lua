@@ -83,7 +83,7 @@ return {
             ["Description"] = desc({}, "Made for Synapse"),
             ["Aliases"] = {"dd", "d-dex", "ddex"},
             ["Function"] = function(args, speaker)
-                ls("https://ayvacs.github.io/scripts/dark-dex")
+                ls("https://ave.is-a.dev/scripts/dark-dex")
             end
         },
         ["domain-x"] = {
