@@ -80,7 +80,7 @@ return {
         },
         ["dark-dex"] = {
             ["ListName"] = "dark-dex",
-            ["Description"] = desc({}, "Made for Synapse"),
+            ["Description"] = desc({"Moon", "Courtney"}, "Made for Synapse"),
             ["Aliases"] = {"dd", "d-dex", "ddex"},
             ["Function"] = function(args, speaker)
                 ls("https://ave.is-a.dev/scripts/dark-dex")
@@ -96,7 +96,7 @@ return {
         },
         ["prison-life-gui"] = {
             ["ListName"] = "prison-life-gui",
-            ["Description"] = desc(),
+            ["Description"] = desc({"[Unknown User]"}),
             ["Aliases"] = {"prison-life", "pl-gui", "pl", "plg"},
             ["Function"] = function(args, speaker)
                 ls("https://pastebin.com/raw/VPrNqGKU")
