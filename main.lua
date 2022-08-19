@@ -10,7 +10,7 @@ meta = {
     loadsig = "Loaded with Galaxy Hub\n"
 }
 
-print(meta._name)
+--print(meta._name)
 
 
 function ls(url)
