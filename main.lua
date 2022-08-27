@@ -79,9 +79,9 @@ return {
             end
         },
         ["dark-dex"] = {
-            ["ListName"] = "dark-dex",
+            ["ListName"] = "dark",
             ["Description"] = desc({"Moon", "Courtney"}, "Made for Synapse"),
-            ["Aliases"] = {"dd", "d-dex", "ddex"},
+            ["Aliases"] = {"dark-dex", "darkdex", "dd", "d-dex", "ddex"},
             ["Function"] = function(args, speaker)
                 ls("https://ave.is-a.dev/scripts/dark-dex")
             end
